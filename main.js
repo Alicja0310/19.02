@@ -18,7 +18,6 @@ function fibocr() {
         fibo.push(fibo[i] + fibo[i - 1])
 
     }
-
 }
 }
 fibocr()
@@ -26,8 +25,8 @@ console.log(fibo)
 
 
 const imiona = new Array()
-for(let i = 1; i < 10; i++) {
-    imiona.push("Magdalena" + i)
+for(let i = 1; i < 11; i++) {
+    imiona.push("Artur" + i)
 }
 console.log(imiona)
 
@@ -37,6 +36,5 @@ for(let i = 0; i < 100; i++) {
     dodawanie.push(i + 1)
     dodawanie.pop()
 }
-
 console.log(dodawanie)
 
