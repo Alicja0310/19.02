@@ -24,17 +24,46 @@ fibocr()
 console.log(fibo)
 
 
-const imiona = new Array()
-for(let i = 1; i < 11; i++) {
-    imiona.push("Artur" + i)
+// const imiona = new Array()
+// for(let i = 1; i < 11; i++) {
+//     imiona.push("Artur" + i)
+// }
+// console.log(imiona)
+
+
+
+const odejmowanie = new Array ()
+for(let i = 100; i > 0; i--) {
+    odejmowanie.push(i)  
 }
-console.log(imiona)
 
+console.log(odejmowanie)
 
-const dodawanie = new Array ()
-for(let i = 0; i < 100; i++) {
-    dodawanie.push(i + 1)
-    dodawanie.pop()
+const licz4060 = odejmowanie.filter(item => {
+    if(item > 40 && item < 60) {
+        return item
+    }
+})
+
+console.log(licz4060)
+
+// let indexLiczby46
+// odejmowanie.find((item, index) => {
+//     if(item === 46) {
+//         indexLiczby46 = index
+//     }
+// })
+// console.log(indexLiczby46)
+
+const aa = licz4060.find ((item, index) => {
+    if (item === 45)
+    return index
 }
-console.log(dodawanie)
+)
+console.log(aa)
 
+const razyTrzy = odejmowanie.map(item => item * 3)
+console.log(razyTrzy)
+
+const sprawdzenie = odejmowanie.some(item => item > 5)
+console.log(sprawdzenie)
